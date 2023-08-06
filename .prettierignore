@@ -7,3 +7,4 @@ coverage
 .gitignore
 .husky/**
 .npmrc
+examples/**
