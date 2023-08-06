@@ -1,7 +1,7 @@
 import { it, expect, afterEach, beforeEach } from 'vitest'
 import { getDocsForDirectory } from '../src/getDocs'
 import { writeDocsToDirectory } from '../src/writeDocs'
-import { rmdirSync, statSync } from 'fs'
+import { readFileSync, rmdirSync, statSync } from 'fs'
 
 beforeEach(() => {
   try {
@@ -15,6 +15,10 @@ afterEach(() => {
 
 it('writeDocsToDirectory', () => {
   writeDocsToDirectory(getDocsForDirectory('tests/assets'), 'tests/docs')
+
+  const contents = readFileSync('tests/docs/Example.md', 'utf8')
+
+  expect(contents).toMatchSnapshot()
 
   expect(statSync('tests/docs/Example.md').isFile()).toBe(true)
 })
