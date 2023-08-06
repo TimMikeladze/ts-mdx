@@ -16,7 +16,7 @@ import { writeDocsToDirectory } from './writeDocs'
   )
 
   program
-    .command('doc')
+    .command('docs')
     .description('Generate documentation')
     .action(async () => {
       if (!program.opts().input) {
@@ -37,8 +37,13 @@ import { writeDocsToDirectory } from './writeDocs'
       )
     })
 
+  const defaultCommand = async () => {}
+
   try {
     await program.parseAsync(process.argv)
+    if (process.argv.length === 2) {
+      await defaultCommand()
+    }
   } catch (err: any) {
     console.error(err.message)
   }

@@ -24,8 +24,8 @@
   "unpkg": "./dist/index.umd.js",
   "bin": "./dist/cli.module.js",
   "scripts": {
-    "dev": "microbundle watch src/{index,cli}.ts -f esm",
-    "build": "yarn link:self && rm -rf dist && microbundle src/{index,cli}.ts && yalc publish",
+    "dev": "microbundle watch src/{index,cli}.ts -f esm --target node",
+    "build": "yarn link:self && rm -rf dist && microbundle src/{index,cli}.ts --target node && yalc publish",
     "lint": "eslint --fix \"src/**/*.+(ts|tsx|js|jsx)\" && prettier --write .",
     "test": "vitest --passWithNoTests",
     "test:ci": "vitest run --coverage --passWithNoTests",

@@ -1,0 +1,38 @@
+# Classes
+## BasicClass
+/**
+ * This is a basic class.
+ *
+ * @export
+ * @class BasicClass
+ * @example
+ * const basicClass = new BasicClass()
+ * basicClass.hello()
+ */
+
+## AnotherClass
+
+
+## AbstractClass
+/**
+ * This is an abstract class.
+ * @abstract
+ */
+
+# Enums
+## Enum
+/**
+ * This is an enum.
+ */
+
+# Interfaces
+## Interface
+/**
+ * This is an interface.
+ */
+
+# Types
+## Type
+/**
+ * This is a type
+ */
