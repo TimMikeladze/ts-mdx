@@ -83,7 +83,8 @@
   },
   "dependencies": {
     "commander": "11.0.0",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "zod": "3.21.4"
   },
   "resolutions": {
     "semver": ">=6.3.1"

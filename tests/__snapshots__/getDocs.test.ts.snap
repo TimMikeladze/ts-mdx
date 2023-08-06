@@ -184,5 +184,205 @@ Map {
       },
     ],
   },
+  "tests/assets/KitchenSink.ts" => {
+    "classes": {
+      "info": [
+        {
+          "className": "Animal",
+          "documentation": "/**
+ * Abstract class definition for an Animal.
+ * @abstract
+ */",
+          "members": [
+            {
+              "documentation": "/**
+   * Creates an instance of Animal.
+   * @param {string} name - The name of the animal.
+   */",
+              "isStatic": false,
+              "kind": 175,
+              "memberName": "constructor",
+            },
+            {
+              "documentation": "/**
+   * Abstract method declaration for making a sound.
+   * @abstract
+   * @returns {void}
+   */",
+              "isStatic": false,
+              "kind": 173,
+              "memberName": "makeSound",
+            },
+            {
+              "documentation": "/**
+   * Moves the animal a certain distance.
+   * @param {number} distance - The distance to move.
+   */",
+              "isStatic": false,
+              "kind": 173,
+              "memberName": "move",
+            },
+          ],
+          "path": "tests/assets/KitchenSink.ts",
+          "tags": [
+            {
+              "name": "abstract",
+            },
+          ],
+        },
+        {
+          "className": "Dog",
+          "documentation": "/**
+ * Class definition for a Dog that extends the Animal class.
+ * @extends {Animal}
+ */",
+          "members": [
+            {
+              "documentation": "/**
+   * Creates an instance of Dog.
+   * @param {string} name - The name of the dog.
+   * @param {string} breed - The breed of the dog.
+   */",
+              "isStatic": false,
+              "kind": 175,
+              "memberName": "constructor",
+            },
+            {
+              "documentation": "/**
+   * Static method to create a puppy with a given name.
+   * @param {string} name - The name of the puppy.
+   * @returns {Dog} - A new Dog instance.
+   */",
+              "isStatic": true,
+              "kind": 173,
+              "memberName": "createPuppy",
+            },
+            {
+              "documentation": "/**
+   * Implementation of the makeSound abstract method.
+   * @override
+   * @returns {void}
+   */",
+              "isStatic": false,
+              "kind": 173,
+              "memberName": "makeSound",
+            },
+          ],
+          "path": "tests/assets/KitchenSink.ts",
+          "tags": [
+            {
+              "name": "extends",
+            },
+          ],
+        },
+        {
+          "className": "MathHelper",
+          "documentation": "/**
+ * Helper class for mathematical operations.
+ */",
+          "members": [
+            {
+              "documentation": "/**
+   * Static method to multiply two numbers with a decorator.
+   * @param {number} a - The first number to multiply.
+   * @param {number} b - The second number to multiply.
+   * @returns {number} - The product of the two numbers.
+   */",
+              "isStatic": true,
+              "kind": 173,
+              "memberName": "multiply",
+            },
+          ],
+          "path": "tests/assets/KitchenSink.ts",
+          "tags": [],
+        },
+        {
+          "className": "Greeter",
+          "documentation": "/**
+ * Default export for the Greeter class.
+ * @export
+ * @class
+ */",
+          "members": [
+            {
+              "documentation": "/**
+   * Creates an instance of Greeter.
+   * @param {string} greeting - The greeting message.
+   */",
+              "isStatic": false,
+              "kind": 175,
+              "memberName": "constructor",
+            },
+            {
+              "documentation": "/**
+   * Method to greet a person.
+   * @param {string} name - The name of the person to greet.
+   * @returns {string} - The greeting message.
+   */",
+              "isStatic": false,
+              "kind": 173,
+              "memberName": "greet",
+            },
+          ],
+          "path": "tests/assets/KitchenSink.ts",
+          "tags": [
+            {
+              "name": "export",
+            },
+            {
+              "name": "class",
+            },
+          ],
+        },
+      ],
+    },
+    "enums": [
+      {
+        "documentation": "/**
+ * Enum definition for gender values.
+ * @enum {string}
+ */",
+        "enumName": "Gender",
+        "members": [
+          {
+            "documentation": "",
+            "memberName": "Female",
+          },
+          {
+            "documentation": "",
+            "memberName": "Male",
+          },
+        ],
+      },
+    ],
+    "interfaces": [
+      {
+        "documentation": "/**
+ * Interface definition for a Person object.
+ * @interface
+ */",
+        "interfaceName": "Person",
+        "members": [
+          {
+            "documentation": "",
+            "memberName": "age",
+          },
+          {
+            "documentation": "",
+            "memberName": "gender",
+          },
+          {
+            "documentation": "",
+            "memberName": "name",
+          },
+          {
+            "documentation": "",
+            "memberName": "sayHello",
+          },
+        ],
+      },
+    ],
+    "types": [],
+  },
 }
 `;

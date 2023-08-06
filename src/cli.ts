@@ -23,9 +23,7 @@ import { writeDocsToDirectory } from './writeDocs'
         console.error('Error: input path is required')
         return
       }
-      if (!program.opts().output) {
-        console.error('Error: output path is required')
-      }
+
       const extension = program.opts().extension || '.md'
       const inputPath = program.opts().input
       const outputPath = program.opts().output

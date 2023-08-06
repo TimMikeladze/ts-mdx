@@ -2,7 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>ts-mdx</span>,
+  logo: <strong>ts-mdx</strong>,
   project: {
     link: 'https://github.com/TimMikeladze/ts-mdx'
   },

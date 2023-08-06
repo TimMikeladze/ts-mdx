@@ -1,4 +1,9 @@
 /**
+ * @file This is a file.
+ * @author Tim
+ */
+
+/**
  * This is an interface.
  */
 export interface Interface {

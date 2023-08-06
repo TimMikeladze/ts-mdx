@@ -3,14 +3,20 @@ import { getDocsForDirectory } from '../src/getDocs'
 import { writeDocsToDirectory } from '../src/writeDocs'
 import { readFileSync, rmdirSync, statSync } from 'fs'
 
+const deletePaths = (paths: string[]) => {
+  paths.forEach((path) => {
+    try {
+      rmdirSync(path, { recursive: true })
+    } catch (e) {}
+  })
+}
+
 beforeEach(() => {
-  try {
-    rmdirSync('tests/docs', { recursive: true })
-  } catch (e) {}
+  deletePaths(['tests/docs'])
 })
 
 afterEach(() => {
-  rmdirSync('tests/docs', { recursive: true })
+  deletePaths(['tests/docs'])
 })
 
 it('writeDocsToDirectory', () => {
