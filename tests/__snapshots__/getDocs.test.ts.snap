@@ -1,0 +1,188 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`getDocsForDirectory 1`] = `
+Map {
+  "tests/assets/Example.ts" => {
+    "classes": {
+      "info": [
+        {
+          "className": "BasicClass",
+          "documentation": "/**
+ * This is a basic class.
+ *
+ * @export
+ * @class BasicClass
+ * @example
+ * const basicClass = new BasicClass()
+ * basicClass.hello()
+ */",
+          "members": [
+            {
+              "documentation": "/**
+   * This is a constructor.
+   * @memberof BasicClass
+   * @example
+   * const basicClass = new BasicClass()
+   */",
+              "isStatic": false,
+              "kind": 175,
+              "memberName": "constructor",
+            },
+            {
+              "documentation": "/**
+   * This is a basic method.
+   *
+   * @memberof BasicClass
+   */",
+              "isStatic": false,
+              "kind": 173,
+              "memberName": "hello",
+            },
+          ],
+          "path": "tests/assets/Example.ts",
+          "tags": [
+            {
+              "name": "export",
+            },
+            {
+              "name": "class",
+            },
+            {
+              "name": "example",
+            },
+          ],
+        },
+        {
+          "className": "AnotherClass",
+          "documentation": "",
+          "members": [
+            {
+              "documentation": "/**
+   * This is a constructor.
+   * @memberof AnotherClass
+   * @example
+   * const anotherClass = new AnotherClass()
+   */",
+              "isStatic": true,
+              "kind": 171,
+              "memberName": "foo",
+            },
+            {
+              "documentation": "",
+              "isStatic": false,
+              "kind": 171,
+              "memberName": "bar",
+            },
+            {
+              "documentation": "",
+              "isStatic": false,
+              "kind": 175,
+              "memberName": "constructor",
+            },
+            {
+              "documentation": "",
+              "isStatic": true,
+              "kind": 173,
+              "memberName": "hello",
+            },
+          ],
+          "path": "tests/assets/Example.ts",
+          "tags": [],
+        },
+        {
+          "className": "AbstractClass",
+          "documentation": "/**
+ * This is an abstract class.
+ * @abstract
+ */",
+          "members": [
+            {
+              "documentation": "/**
+   * This is a constructor.
+   * @memberof AbstractClass
+   * @example
+   * const abstractClass = new AbstractClass()
+   */",
+              "isStatic": false,
+              "kind": 175,
+              "memberName": "constructor",
+            },
+            {
+              "documentation": "",
+              "isStatic": false,
+              "kind": 173,
+              "memberName": "hello",
+            },
+          ],
+          "path": "tests/assets/Example.ts",
+          "tags": [
+            {
+              "name": "abstract",
+            },
+          ],
+        },
+      ],
+    },
+    "enums": [
+      {
+        "documentation": "/**
+ * This is an enum.
+ */",
+        "enumName": "Enum",
+        "members": [
+          {
+            "documentation": "/**
+   * This is a property.
+   */",
+            "memberName": "bar",
+          },
+          {
+            "documentation": "",
+            "memberName": "foo",
+          },
+        ],
+      },
+    ],
+    "interfaces": [
+      {
+        "documentation": "/**
+ * This is an interface.
+ */",
+        "interfaceName": "Interface",
+        "members": [
+          {
+            "documentation": "",
+            "memberName": "bar",
+          },
+          {
+            "documentation": "/**
+   * This is a property.
+   */",
+            "memberName": "foo",
+          },
+        ],
+      },
+    ],
+    "types": [
+      {
+        "documentation": "/**
+ * This is a type
+ */",
+        "members": [
+          {
+            "documentation": "",
+            "memberName": "bar",
+          },
+          {
+            "documentation": "/**
+   * This is a property.
+   */",
+            "memberName": "foo",
+          },
+        ],
+        "typeName": "Type",
+      },
+    ],
+  },
+}
+`;
