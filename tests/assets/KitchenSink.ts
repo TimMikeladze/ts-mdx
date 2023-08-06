@@ -86,13 +86,6 @@ class Dog extends Animal {
   }
 }
 
-/**
- * Decorator function to log method calls and their arguments.
- * @param {any} target - The target object (class prototype).
- * @param {string} propertyKey - The name of the property (method) being decorated.
- * @param {PropertyDescriptor} descriptor - The property descriptor for the method.
- * @returns {PropertyDescriptor} - The modified property descriptor.
- */
 function logMethod(
   target: any,
   propertyKey: string,
@@ -134,7 +127,6 @@ export class MathHelper {
    * @param {number} b - The second number to multiply.
    * @returns {number} - The product of the two numbers.
    */
-  @logMethod
   static multiply(a: number, b: number): number {
     return a * b
   }

@@ -6,5 +6,6 @@
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "Node"
-  }
+  },
+  "exclude": ["examples/**/*"]
 }
